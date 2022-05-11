@@ -4,6 +4,7 @@
         <title>지능형로봇 물류서비스</title>
         <meta charset="utf-8">
         <link rel="stylesheet" href="style.css">
+        <script src="item.js"></script>
     </head>
     <body>
       <div id="header">
@@ -12,10 +13,10 @@
 
       <div id="nav">
         <div class="nav_inner">
-          <ol>
-              <span>메인페이지</span>
-              <span>로그인</span>
-          </ol>
+          <ul class="navigation clearfix">
+              <li class="navigation_list"><a href="mainpage.html" class="navigation_link">메인페이지</a></li>
+              <li class="navigation_list"><a href="" class="navigation_link">로봇상태</a></li>
+          </ul>
         </div>
       </div>
 
@@ -29,9 +30,15 @@
               </div>
               <div class="item_add_option" class="clearfix">
                 <div class="item_number">
-                  <input type="button" class="item_number_minus" value="-">
-                  <input type="text" class="item_number_value" value="1" maxlength="6" autocomplete="off">
-                  <input type="button" class="item_number_plus" value="+">
+                  <input type="button" class="item_number_minus" value="-" onclick="
+                    buttonchangeValue(this,'#caster');
+                  ">
+                  <input type="text" id="caster" class="item_number_value" value="1" maxlength="6" autocomplete="off" oninput="
+                    textValue(this);
+                  ">
+                  <input type="button" class="item_number_plus" value="+" onclick="
+                    buttonchangeValue(this,'#caster');
+                  ">
                 </div>
                 <input type="button" class="item_number_add" class="caster_add_button" value="담기">
               </div>
@@ -43,9 +50,15 @@
               </div>
               <div class="item_add_option" class="clearfix">
                 <div class="item_number">
-                  <input type="button" class="item_number_minus" value="-">
-                  <input type="text" class="item_number_value" value="1" maxlength="6" autocomplete="off">
-                  <input type="button" class="item_number_plus" value="+">
+                  <input type="button" class="item_number_minus" value="-" onclick="
+                    buttonchangeValue(this,'#L298N');
+                  ">
+                  <input type="text" id="L298N" class="item_number_value" value="1" maxlength="6" autocomplete="off" oninput="
+                    textValue(this);
+                  ">
+                  <input type="button" class="item_number_plus" value="+" onclick="
+                    buttonchangeValue(this,'#L298N');
+                  ">
                 </div>
                 <input type="button" class="item_number_add" class="l298n_add_button" value="담기">
               </div>
@@ -57,9 +70,15 @@
               </div>
               <div class="item_add_option" class="clearfix">
                 <div class="item_number">
-                  <input type="button" class="item_number_minus" value="-">
-                  <input type="text" class="item_number_value" value="1" maxlength="6" autocomplete="off">
-                  <input type="button" class="item_number_plus" value="+">
+                  <input type="button" class="item_number_minus" value="-" onclick="
+                    buttonchangeValue(this,'#bearing');
+                  ">
+                  <input type="text" id="bearing" class="item_number_value" value="1" maxlength="6" autocomplete="off" oninput="
+                    textValue(this);
+                  ">
+                  <input type="button" class="item_number_plus" value="+" onclick="
+                    buttonchangeValue(this,'#bearing');
+                  ">
                 </div>
                 <input type="button" class="item_number_add" class="bearing_add_button" value="담기">
               </div>
@@ -71,9 +90,15 @@
               </div>
               <div class="item_add_option" class="clearfix">
                 <div class="item_number">
-                  <input type="button" class="item_number_minus" value="-">
-                  <input type="text" class="item_number_value" value="1" maxlength="6" autocomplete="off">
-                  <input type="button" class="item_number_plus" value="+">
+                  <input type="button" class="item_number_minus" value="-" onclick="
+                   buttonchangeValue(this,'#bracket');
+                   ">
+                  <input type="text" id="bracket" class="item_number_value" value="1" maxlength="6" autocomplete="off" oninput="
+                    textValue(this);
+                  ">
+                  <input type="button" class="item_number_plus" value="+" onclick="
+                    buttonchangeValue(this,'#bracket');
+                  ">
                 </div>
                 <input type="button" class="item_number_add" class="bracket_add_button" value="담기">
               </div>
@@ -85,9 +110,15 @@
               </div>
               <div class="item_add_option" class="clearfix">
                 <div class="item_number">
-                  <input type="button" class="item_number_minus" value="-">
-                  <input type="text" class="item_number_value" value="1" maxlength="6" autocomplete="off">
-                  <input type="button" class="item_number_plus" value="+">
+                  <input type="button" class="item_number_minus" value="-" onclick="
+                    buttonchangeValue(this,'#mecanum');
+                  ">
+                  <input type="text" id="mecanum" class="item_number_value" value="1" maxlength="6" autocomplete="off" oninput="
+                    textValue(this);
+                  ">
+                  <input type="button" class="item_number_plus" value="+" onclick="
+                    buttonchangeValue(this,'#mecanum');
+                  ">
                 </div>
                 <input type="button" class="item_number_add" class="mecanum_add_button" value="담기">
               </div>
@@ -99,9 +130,15 @@
               </div>
               <div class="item_add_option" class="clearfix">
                 <div class="item_number">
-                  <input type="button" class="item_number_minus" value="-">
-                  <input type="text" class="item_number_value" value="1" maxlength="6" autocomplete="off">
-                  <input type="button" class="item_number_plus" value="+">
+                  <input type="button" class="item_number_minus" value="-" onclick="
+                    buttonchangeValue(this,'#motor');
+                  ">
+                  <input type="text" id="motor" class="item_number_value" value="1" maxlength="6" autocomplete="off" oninput="
+                    textValue(this);
+                  ">
+                  <input type="button" class="item_number_plus" value="+" onclick="
+                    buttonchangeValue(this,'#motor');
+                  ">
                 </div>
                 <input type="button" class="item_number_add" class="motor_add_butoon" value="담기">
               </div>
@@ -109,7 +146,12 @@
           </ul>
         </div>
         <div class="aside">
+          <div id="order">
            주문
+          </div>
+          <div class="order_list">
+            
+          </div>
         </div>
       </div>
 

@@ -27,9 +27,8 @@ a:hover{
 }
 
 
-
+/*mainlogo design(header)*/
 #mainlogo{
-    border-bottom: 1px solid gray;
     margin: 0;
     padding: 20px;
     text-align: center;
@@ -37,15 +36,23 @@ a:hover{
 #mainlogo a{
     color: black;
 }
+/*nav design(menu)*/
 #nav{
   height: 30px;
-  background: yellowgreen;
+  border-bottom: 1px solid #e5e5e5;
+  border-top: 1px solid #e5e5e5;
 }
 .nav_inner{
   width: 1000px;
   margin: 0 auto;
 }
-
+.navigation_list{
+  float: left;
+  width: 500px;
+  line-height: 30px;
+  text-align: center;
+}
+/*content design*/
 #content_main{
     background: #fff;
     width: 1020px;
@@ -99,6 +106,14 @@ img{
   border: 1px solid #C2C2C2;
   float: left;
 }
+#order{
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+}
+.order_list{
+  width: 150px;
+  height: auto;
+}
 .clearfix{
   overflow: auto;
 }
@@ -107,6 +122,7 @@ img{
   display: block;
   content: "";
 }
+/*detail function design in content*/
 .item_number{
   width: 86px;
   height: 22px;
