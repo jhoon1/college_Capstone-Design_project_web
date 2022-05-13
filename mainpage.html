@@ -25,122 +25,134 @@
           <ul>
             <li class="section_items" class="clearfix">
               <img src="https://i.imgur.com/HuTVWNo.jpg">
-              <div class="section_items_one">
-                <span>캐스터 휠</span>
+              <div class="section_items_name" id="item_name_caster">
+                캐스터 휠
               </div>
-              <div class="item_add_option" class="clearfix">
-                <div class="item_number">
+              <div class="item_add_option">
+                <div class="item_number" class="clearfix">
                   <input type="button" class="item_number_minus" value="-" onclick="
-                    buttonchangeValue(this,'#caster');
+                    buttonchangeValue(this,'caster');
                   ">
                   <input type="text" id="caster" class="item_number_value" value="1" maxlength="6" autocomplete="off" oninput="
                     textValue(this);
                   ">
                   <input type="button" class="item_number_plus" value="+" onclick="
-                    buttonchangeValue(this,'#caster');
+                    buttonchangeValue(this,'caster');
                   ">
                 </div>
-                <input type="button" class="item_number_add" class="caster_add_button" value="담기">
+                <input type="button" class="item_number_add" class="caster_add_button" value="담기" onclick="
+                itemGolist('caster_list', 'caster_item_list', 'list_caster_name', 'caster_item_number', 'item_name_caster', 'caster_order', 'caster_cancel', 'caster');
+                ">
               </div>
             </li>
             <li class="section_items" class="clearfix">
               <img src="https://i.imgur.com/infthpG.jpg">
-              <div class="section_items_two">
-                <span>L298N</span>
+              <div class="section_items_name" id="item_name_L298N">
+                L298N
               </div>
               <div class="item_add_option" class="clearfix">
                 <div class="item_number">
                   <input type="button" class="item_number_minus" value="-" onclick="
-                    buttonchangeValue(this,'#L298N');
+                    buttonchangeValue(this,'L298N');
                   ">
                   <input type="text" id="L298N" class="item_number_value" value="1" maxlength="6" autocomplete="off" oninput="
                     textValue(this);
                   ">
                   <input type="button" class="item_number_plus" value="+" onclick="
-                    buttonchangeValue(this,'#L298N');
+                    buttonchangeValue(this,'L298N');
                   ">
                 </div>
-                <input type="button" class="item_number_add" class="l298n_add_button" value="담기">
+                <input type="button" class="item_number_add" class="l298n_add_button" value="담기" onclick="
+                itemGolist('L298N_list', 'L298N_item_list', 'list_L298N_name', 'L298N_item_number', 'item_name_L298N', 'L298N_order', 'L298N_cancel', 'L298N');
+                ">
               </div>
             </li>
             <li class="section_items" class="clearfix">
               <img src="https://i.imgur.com/tUjEQmj.jpg">
-              <div class="section_items_three">
-                <span>플랜지 선형 볼 베어링</span>
+              <div class="section_items_name" id="item_name_bearing">
+                플랜지 선형 볼 베어링
               </div>
               <div class="item_add_option" class="clearfix">
                 <div class="item_number">
                   <input type="button" class="item_number_minus" value="-" onclick="
-                    buttonchangeValue(this,'#bearing');
+                    buttonchangeValue(this,'bearing');
                   ">
                   <input type="text" id="bearing" class="item_number_value" value="1" maxlength="6" autocomplete="off" oninput="
                     textValue(this);
                   ">
                   <input type="button" class="item_number_plus" value="+" onclick="
-                    buttonchangeValue(this,'#bearing');
+                    buttonchangeValue(this,'bearing');
                   ">
                 </div>
-                <input type="button" class="item_number_add" class="bearing_add_button" value="담기">
+                <input type="button" class="item_number_add" class="bearing_add_button" value="담기" onclick="
+                itemGolist('bearing_list', 'bearing_item_list', 'list_bearing_name', 'bearing_item_number', 'item_name_bearing', 'bearing_order', 'bearing_cancel', 'bearing');
+                ">
               </div>
             </li>
             <li class="section_items" class="clearfix">
               <img src="https://i.imgur.com/LKL9cgw.jpg">
-              <div class="section_items_four">
-                <span>다이캐스팅 브라켓</span>
+              <div class="section_items_name" id="item_name_bracket">
+                다이캐스팅 브라켓
               </div>
               <div class="item_add_option" class="clearfix">
                 <div class="item_number">
                   <input type="button" class="item_number_minus" value="-" onclick="
-                   buttonchangeValue(this,'#bracket');
+                   buttonchangeValue(this,'bracket');
                    ">
                   <input type="text" id="bracket" class="item_number_value" value="1" maxlength="6" autocomplete="off" oninput="
                     textValue(this);
                   ">
                   <input type="button" class="item_number_plus" value="+" onclick="
-                    buttonchangeValue(this,'#bracket');
+                    buttonchangeValue(this,'bracket');
                   ">
                 </div>
-                <input type="button" class="item_number_add" class="bracket_add_button" value="담기">
+                <input type="button" class="item_number_add" class="bracket_add_button" value="담기" onclick="
+                itemGolist('bracket_list', 'bracket_item_list', 'list_bracket_name', 'bracket_item_number', 'item_name_bracket', 'bracket_order', 'bracket_cancel', 'bracket');
+                ">
               </div>
             </li>
             <li class="section_items" class="clearfix">
               <img src="https://i.imgur.com/uMNpVGo.jpg">
-              <div class="section_items_five">
-                <span>메카넘 휠</span>
+              <div class="section_items_name" id="item_name_mecanum">
+                메카넘 휠
               </div>
               <div class="item_add_option" class="clearfix">
                 <div class="item_number">
                   <input type="button" class="item_number_minus" value="-" onclick="
-                    buttonchangeValue(this,'#mecanum');
+                    buttonchangeValue(this,'mecanum');
                   ">
                   <input type="text" id="mecanum" class="item_number_value" value="1" maxlength="6" autocomplete="off" oninput="
                     textValue(this);
                   ">
                   <input type="button" class="item_number_plus" value="+" onclick="
-                    buttonchangeValue(this,'#mecanum');
+                    buttonchangeValue(this,'mecanum');
                   ">
                 </div>
-                <input type="button" class="item_number_add" class="mecanum_add_button" value="담기">
+                <input type="button" class="item_number_add" class="mecanum_add_button" value="담기" onclick="
+                itemGolist('mecanum_list', 'mecanum_item_list', 'list_mecanum_name', 'mecanum_item_number', 'item_name_mecanum', 'mecanum_order', 'mecanum_cancel', 'mecanum');
+                ">
               </div>
             </li>
             <li class="section_items" class="clearfix">
               <img src="https://i.imgur.com/WlwyTsC.jpg">
-              <div class="section_items_six">
-                <span>서보형 DC 모터(KR-300-SIDE)</span>
+              <div class="section_items_name" id="item_name_motor">
+                서보형 DC 모터(KR-300-SIDE)
               </div>
               <div class="item_add_option" class="clearfix">
                 <div class="item_number">
                   <input type="button" class="item_number_minus" value="-" onclick="
-                    buttonchangeValue(this,'#motor');
+                    buttonchangeValue(this,'motor');
                   ">
                   <input type="text" id="motor" class="item_number_value" value="1" maxlength="6" autocomplete="off" oninput="
                     textValue(this);
                   ">
                   <input type="button" class="item_number_plus" value="+" onclick="
-                    buttonchangeValue(this,'#motor');
+                    buttonchangeValue(this,'motor');
                   ">
                 </div>
-                <input type="button" class="item_number_add" class="motor_add_butoon" value="담기">
+                <input type="button" class="item_number_add" class="motor_add_butoon" value="담기" onclick="
+                  itemGolist('motor_list', 'motor_item_list', 'list_motor_name', 'motor_item_number', 'item_name_motor', 'motor_order', 'motor_cancel', 'motor');
+                  ">
               </div>
             </li>
           </ul>
@@ -149,11 +161,13 @@
           <div id="order">
            주문
           </div>
-          <div class="order_list">
+          <div id="order_list">
             
+          </div>
+          <div id="order_finish">
+            <input type="button" class="ordering" value="주문하기">
           </div>
         </div>
       </div>
-
     </body>
 </html>
