@@ -1,4 +1,13 @@
 function textValue(self2){
+    if(isNaN(self2.value) == true){
+        self2.value = ''
+    }
+    else{
+        self2.value
+    }
+}
+
+function textValue2(self2){
     if(isNaN(document.getElementById(self2).value) == true){
         document.getElementById(self2).value = ''
     }
@@ -98,6 +107,6 @@ function itemGolist(all, detail, at, number, name, self2, no, obn){
     });
     var btv = document.getElementById(self2);
     btv.addEventListener('input', function(){
-        textValue(self2);
+        textValue2(self2);
     });
 }
