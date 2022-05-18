@@ -5,6 +5,7 @@
         <meta charset="utf-8">
         <link rel="stylesheet" href="style.css">
         <script src="item.js"></script>
+        <script type="module" src="index.js"></script>
     </head>
     <body>
       <div id="header">
@@ -170,4 +171,29 @@
         </div>
       </div>
     </body>
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.1/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.8.1/firebase-analytics.js";
+      import { getFirestore, collection, getDocs, getDoc } from "https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+    
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      const firebaseConfig = {
+        apiKey: "AIzaSyDwHj-Ha1Psn-Obo162XHdzYKX93QLhI-I",
+        authDomain: "test-88406.firebaseapp.com",
+        projectId: "test-88406",
+        storageBucket: "test-88406.appspot.com",
+        messagingSenderId: "370787656389",
+        appId: "1:370787656389:web:82e8cd48e76a9bb41d06ac",
+        measurementId: "G-41EG1KXSJE"
+      };
+    
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+      const db = getFirestore(app);
+    </script>
 </html>
